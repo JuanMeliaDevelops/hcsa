@@ -55,6 +55,137 @@
     transform: scale(1.1);
   }
 
+  .pb_sm_py_cover {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 40vh; /* Ajusta la altura del banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+
+  /* hospitalarias */
+
+  .pb_section {
+    padding: 60px 0;
+  }
+  
+  .pb_section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .pb_section .sub-heading {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pb_section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .pb_section ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .pb_section ul li::before {
+    content: "\2022"; /* Bullet point */
+    color: #007bff; /* Color del bullet */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .image-gallery {
+    text-align: center;
+  }
+  
+  .image-gallery .figure {
+    margin: 1rem 0;
+  }
+  
+  .image-gallery .figure-caption {
+    font-size: 0.875rem;
+    color: #666;
+  }
+
+  /* footer */
+ 
+  .footer {
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer-logo img {
+    max-width: 120px;
+  }
+  
+  .footer-heading {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.3rem;
+  }
+  
+  .footer-links a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .footer p {
+    margin-bottom: 0.3rem;
+  }
+  
+  .footer a.text-white {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .footer a.text-white:hover {
+    color: #fff;
+  }
+  
+  .footer .fas {
+    margin-right: 0.3rem;
+  }
+  
+  .footer .text-center p {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: #aaa;
+  }
+  
+
 
 .mouse-wrap, .scroll-wrap {
   position: absolute;
