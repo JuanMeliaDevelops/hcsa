@@ -69,20 +69,20 @@
   
 
   /* hospitalarias */
-
+ 
   .pb_section {
     padding: 60px 0;
   }
   
   .pb_section h2 {
     font-size: 2.5rem;
-    color: #333;
+    color: #003366;
     margin-bottom: 1rem;
   }
   
   .pb_section .sub-heading {
     font-size: 1.25rem;
-    color: #666;
+    color: #666666;
     margin-bottom: 0.5rem;
   }
   
@@ -92,34 +92,92 @@
   }
   
   .pb_section ul li {
+    list-style-type: none;
     font-size: 1rem;
-    color: #333;
+    color: #333333;
     margin-bottom: 0.75rem;
     padding-left: 20px;
     position: relative;
   }
   
-  .pb_section ul li::before {
-    content: "\2022"; /* Bullet point */
-    color: #007bff; /* Color del bullet */
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+  .pb_section ul li i {
+    margin-right: 10px;
   }
   
   .image-gallery {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .image-gallery .figure {
-    margin: 1rem 0;
+    margin: 15px;
+  }
+  
+  .image-gallery .figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
   
   .image-gallery .figure-caption {
-    font-size: 0.875rem;
-    color: #666;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #6c757d;
   }
+  
+  .list-unstyled {
+    padding-left: 0;
+  }
+  
+  .list-unstyled li {
+    margin-bottom: 10px;
+  }
+  
+  .list-unstyled a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .list-unstyled a:hover {
+    text-decoration: underline;
+  }
+  
+  .list-group-item {
+    display: block;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .list-group-item img.project-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .list-group-item img.project-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .list-group-item h4 {
+    font-size: 1.25rem;
+    color: #333333;
+    margin-top: 15px;
+  }
+  
+  .large-img {
+    height: 350px; /* Ajusta la altura según sea necesario */
+    object-fit: cover;
+  }
+  
+    /* hospitalarias end */
 
   /* footer */
  
@@ -130,7 +188,7 @@
   }
   
   .footer-logo img {
-    max-width: 120px;
+    max-width: 200px;
   }
   
   .footer-heading {
@@ -145,6 +203,7 @@
   }
   
   .footer-links li {
+    list-style: none;
     margin-bottom: 0.3rem;
   }
   
@@ -185,6 +244,36 @@
     color: #aaa;
   }
   
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, opacity 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.back-to-top:hover {
+  background-color: #007bff;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 
 .mouse-wrap, .scroll-wrap {

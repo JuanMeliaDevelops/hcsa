@@ -17,6 +17,14 @@
     <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
 
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <!-- Lightbox2 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<head>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
     
     
     <link rel="stylesheet" href="assets/css/slick.css">
@@ -45,14 +53,14 @@
             <li class="nav-item"><a class="nav-link" href="index.html#nosotros">Nosotros</a></li>
            
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="obras.html" id="navbarDropdown" role="button" style="cursor: pointer;">
+              <a class="nav-link dropdown-toggle active"  id="navbarDropdown" role="button" style="cursor: pointer;">
                 Obras
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="viviendas.html">Viviendas</a>
-                <a class="dropdown-item" href="#hospitalarias">Hospitalarias, Laboratorios y Bioterios</a>
-                <a class="dropdown-item" href="#administrativos">Edificios Administrativos</a>
-                <a class="dropdown-item" href="#educativos">Establecimientos Educativos y Deportivos</a>
+                <a class="dropdown-item" href="hospitalarias.html">Hospitalarias, Laboratorios y Bioterios</a>
+                <a class="dropdown-item" href="administrativos.html">Edificios Administrativos</a>
+                <a class="dropdown-item" href="educativos.html">Establecimientos Educativos y Deportivos</a>
               </div>
             </li>
 
@@ -64,67 +72,549 @@
     <!-- END nav -->
 
 
-    
     <section id="hospitalarias" class="pb_section bg-light">
-        <div class="container">
-          <div class="row justify-content-center text-center mb-5">
-            <div class="col-md-8">
-              <h2 class="mb-4">Hospital Interzonal de Ezeiza</h2>
-              <p class="sub-heading">Superficie: 15.000 m²</p>
-              <p class="sub-heading">Ubicación: L.N. Alem 349 – La Unión – Buenos Aires</p>
-            </div>
+
+        <div class="row justify-content-md-center text-center ">
+          <div class="col-lg-7">
+            <h2 class="mt-0 heading-border-top font-weight-normal">Obras</h2>
+            <h3>Arquitectura Hospitalaria: Hospitalarias, Laboratorios y Bioterios</h3>
+            <p class="mt-4">Realizamos obras de Arquitectura Hospitalaria de alta complejidad y atencion primaria.</p>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li><strong>180 camas para internación</strong> entre maternidad, cuidados generales, intermedios, intensivos y coronarios.</li>
-                <li><strong>2 consultorios pediátricos</strong></li>
-                <li><strong>4 consultorios para adultos</strong></li>
-                <li><strong>3 quirófanos</strong></li>
-                <li><strong>Aparatología:</strong> tomógrafo, resonador, seriógrafo</li>
-                <li><strong>2 salas de partos</strong></li>
-                <li><strong>Un helipuerto</strong></li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <div class="image-gallery">
-                <figure class="figure">
-                  <img src="assets/images/feed/hospitalarias.jpg" class="figure-img img-fluid rounded" alt="Vista panorámica del acceso principal">
-                  <figcaption class="figure-caption text-center">Vista panorámica del acceso principal</figcaption>
-                </figure>
-                <!-- Añadir más imágenes según sea necesario -->
+        </div>
+
+        <section id="mas-proyectos" class="pb_section bg-light">
+      
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-4">
+                  <a href="#proyecto1" class="smoothscroll list-group-item list-group-item-action">
+                    <img src="assets/images/hospitalarias/hospital-ituzaingio/img1.jpg" class="img-fluid rounded project-img" alt="Proyecto 1">
+                    <h4 class="mt-2">Hospital de Ituzaingo</h4>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#proyecto2" class="list-group-item list-group-item-action smoothscroll">
+                    <img src="assets/images/hospitalarias/hospital-ezeiza/hospital-eze-4.jpg" class="img-fluid rounded project-img" alt="Proyecto 2">
+                    <h4 class="mt-2">Hospital de Ezeiza</h4>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#proyecto3" class="list-group-item list-group-item-action smoothscroll">
+                    <img src="assets/images/hospitalarias/pabellon-gendarmeria/img4.jpeg" class="img-fluid rounded project-img" alt="Proyecto 3">
+                    <h4 class="mt-2">Pabellón Sanitario Gendarmería</h4>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#proyecto4" class="list-group-item list-group-item-action smoothscroll">
+                    <img src="assets/images/hospitalarias/policlinico-santamarina/img.jpg" class="img-fluid rounded project-img" alt="Proyecto 3">
+                    <h4 class="mt-2">Policlínico Santamarina</h4>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#proyecto5" class="list-group-item list-group-item-action smoothscroll">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Proyecto 3">
+                    <h4 class="mt-2">Bioterio INVAP</h4>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#proyecto6" class="list-group-item list-group-item-action smoothscroll">
+                    <img src="assets/images/hospitalarias/veterinaria-uba/10.jpg" class="img-fluid rounded project-img" alt="Proyecto 3">
+                    <h4 class="mt-2">Bioterio Veterinaria UBA</h4>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#proyecto7" class="list-group-item list-group-item-action smoothscroll">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Proyecto 3">
+                    <h4 class="mt-2">Unidad Coronaria Hospital Cosme Argerich</h4>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#proyecto8" class="list-group-item list-group-item-action smoothscroll">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Proyecto 3">
+                    <h4 class="mt-2">Refuncionalizacion Centro Quirurgico Sanatorio Dr. Julio Mendez - ObSBA </h4>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
+          
+
+          <section id="proyecto1" class="pb_section bg-light">
+            <div class="container">
+              <div class="row justify-content-md-center text-center mb-5">
+                <div class="col-lg-7">
+                  <h2 class="mt-0 heading-border-top font-weight-normal">Hospital de Bicentenario Ituzaingo</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="project-details">
+                    <h3>Datos del proyecto</h3>
+                    <ul class="list-unstyled">
+                      <li><i class="fa fa-building"></i> <strong>Cliente:</strong> Cliente Hospital Ituzaingo</li>
+                      <li><i class="fa fa-map-marker"></i> <strong>Localización:</strong> Ringuelet 2700 – Ituzaingó – Buenos Aires</li>
+                      <li><i class="fa fa-calendar"></i> <strong>Año:</strong> 202X</li>
+                      <li><i class="fa fa-arrows-alt"></i> <strong>Superficie:</strong> 22.000 m2</li>
+                      <li><i class="fa fa-map"></i> <a href="https://g.co/kgs/nvV16Tv" target="_blank">Ver en Mapa</a></li>
+                    </ul>
+                    <h3>Descripción del proyecto</h3>
+                    <li>112 camas comunes de internaciones.</li>
+                    <li>13 camas de terapia intermedia.</li>
+                    <li>8 camas de terapia intensiva.</li>
+                    <li>8 observaciones de quirófanos.</li>
+                    <li>4 puestos de recuperación mediata./li>
+                    <li>2 camas de recuperación inmediata.</li>
+                    <li>4 puestos de observación adultos.</li>
+                    <li>6 quirófanos.</li>
+                    <li>1 tomógrafo.</li>
+                    <li>1 shockrooom adultos.</li>
+                    <li>Sanatorio de alta complejidad.</li>
+                  </div>
+                </div>
+                <div class="col-lg-4 ">
+                  <a href="assets/images/hospitalarias/hospital-ituzaingio/img1.jpg" data-lightbox="proyecto1">
+                    <img src="assets/images/hospitalarias/hospital-ituzaingio/img1.jpg" class="img-fluid rounded large-img" alt="Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+              <div class="row mt-4 ">
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/hospital-ituzaingio/img4.jpg" data-lightbox="proyecto1">
+                    <img src="assets/images/hospitalarias/hospital-ituzaingio/img4.jpg" class="img-fluid rounded project-img" alt="Imagen 1 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/hospital-ituzaingio/img2.jpg" data-lightbox="proyecto1">
+                    <img src="assets/images/hospitalarias/hospital-ituzaingio/img2.jpg" class="img-fluid rounded project-img" alt="Imagen 2 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/hospital-ituzaingio/img5.jpg" data-lightbox="proyecto1">
+                    <img src="assets/images/hospitalarias/hospital-ituzaingio/img5.jpg" class="img-fluid rounded project-img" alt="Imagen 3 del Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section id="proyecto2" class="pb_section bg-light">
+            <div class="container">
+              <div class="row justify-content-md-center text-center mb-5">
+                <div class="col-lg-7">
+                  <h2 class="mt-0 heading-border-top font-weight-normal">Hospital Interzonal de Ezeiza</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="project-details">
+                    <h3>Datos del proyecto</h3>
+                    <ul class="list-unstyled">
+                      <li><i class="fa fa-building"></i> <strong>Cliente:</strong> Cliente Hospital Ezeiza</li>
+                      <li><i class="fa fa-map-marker"></i> <strong>Localización:</strong> L.N. Alem 349 – La Unión – Buenos Aires</li>
+                      <li><i class="fa fa-calendar"></i> <strong>Año:</strong> 202X</li>
+                      <li><i class="fa fa-arrows-alt"></i> <strong>Superficie:</strong> 15.000 m2</li>
+                      <li><i class="fa fa-map"></i> <a href="https://g.co/kgs/e57BLoz" target="_blank">Ver en Mapa</a></li>
+                    </ul>
+                    <h3>Descripción del proyecto</h3>
+                     <li>180 camas para internación entre maternidad, cuidados generales, intermedios, intensivos y coronarios.</li>
+                     <li>2 consultorios pediátricos.</li>
+                     <li>4 consultorios para adultos.</li>
+                     <li>3 quirófanos</li>
+                     <li>Aparatología: tomógrafo, resonador, seriógrafo</li>
+                     <li>2 salas de partos</li>
+                     <li>Un helipuerto</li>
+
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 ">
+                  <a href="assets/images/hospitalarias/hospital-ezeiza/hospital-eze-4.jpg" data-lightbox="proyecto2">
+                    <img src="assets/images/hospitalarias/hospital-ezeiza/hospital-eze-4.jpg" class="img-fluid rounded large-img" alt="Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+              <div class="row mt-4 ">
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/hospital-ezeiza/hospital-eze-2.jpg" data-lightbox="proyecto2">
+                    <img src="assets/images/hospitalarias/hospital-ezeiza/hospital-eze-2.jpg" class="img-fluid rounded project-img" alt="Imagen 1 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/hospital-ezeiza/hospital-eze3.jpg" data-lightbox="proyecto2">
+                    <img src="assets/images/hospitalarias/hospital-ezeiza/hospital-eze3.jpg" class="img-fluid rounded project-img" alt="Imagen 2 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/hospital-ezeiza/hospital-eze-1.jpg" data-lightbox="proyecto2">
+                    <img src="assets/images/hospitalarias/hospital-ezeiza/hospital-eze-1.jpg" class="img-fluid rounded project-img" alt="Imagen 3 del Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="proyecto3" class="pb_section bg-light">
+            <div class="container">
+              <div class="row justify-content-md-center text-center mb-5">
+                <div class="col-lg-7">
+                  <h2 class="mt-0 heading-border-top font-weight-normal">Pabellón Sanitario Gendarmería Nacional</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="project-details">
+                    <h3>Datos del proyecto</h3>
+                    <ul class="list-unstyled">
+                      <li><i class="fa fa-building"></i> <strong>Cliente:</strong> Gendarmería Nacional</li>
+                      <li><i class="fa fa-map-marker"></i> <strong>Localización:</strong> Campo de Mayo - Buenos Aires</li>
+                      <li><i class="fa fa-calendar"></i> <strong>Año:</strong> 202X</li>
+                      <li><i class="fa fa-arrows-alt"></i> <strong>Superficie:</strong> 2.100 m2</li>
+                      <li><i class="fa fa-map"></i> <a href="url_a_google_maps" target="_blank">Ver en Mapa</a></li>
+                    </ul>
+                    <h3>Descripción del proyecto</h3>
+                    <li>Construcción de Edificio en planta dos plantas operativas y un subsuelo Técnico.</li>
+                     <li>Destinado a hospital de día y consultorios de distintas especialidades.</li>
+                     <li>Diagnostico por imágenes. (RX - tomografía - ecografía).</li>
+                     <li>Sala de urgencias.</li>
+                     <li>Laboratorio Bioquímico.</li>
+                     <li>Núcleos sanitarios.</li>
+                     <li>Cocina - Comedor - Office</li> 
+                  </div>
+                </div>
+                <div class="col-lg-4 ">
+                  <a href="assets/images/hospitalarias/pabellon-gendarmeria/img4.jpeg" data-lightbox="proyecto3">
+                    <img src="assets/images/hospitalarias/pabellon-gendarmeria/img4.jpeg" class="img-fluid rounded large-img" alt="Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+              <div class="row mt-4 ">
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/pabellon-gendarmeria/img1.jpeg" data-lightbox="proyecto3">
+                    <img src="assets/images/hospitalarias/pabellon-gendarmeria/img1.jpeg" class="img-fluid rounded project-img" alt="Imagen 1 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/pabellon-gendarmeria/img2.jpeg" data-lightbox="proyecto3">
+                    <img src="assets/images/hospitalarias/pabellon-gendarmeria/img2.jpeg" class="img-fluid rounded project-img" alt="Imagen 2 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/pabellon-gendarmeria/img3.jpeg" data-lightbox="proyecto3">
+                    <img src="assets/images/hospitalarias/pabellon-gendarmeria/img3.jpeg" class="img-fluid rounded project-img" alt="Imagen 3 del Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="proyecto4" class="pb_section bg-light">
+            <div class="container">
+              <div class="row justify-content-md-center text-center mb-5">
+                <div class="col-lg-7">
+                  <h2 class="mt-0 heading-border-top font-weight-normal">Policlínico Santamarina</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="project-details">
+                    <h3>Datos del proyecto</h3>
+                    <ul class="list-unstyled">
+                      <li><i class="fa fa-building"></i> <strong>Cliente:</strong> Santamarina</li>
+                      <li><i class="fa fa-map-marker"></i> <strong>Localización:</strong> Monte Grande – Provincia de Buenos Aires</li>
+                      <li><i class="fa fa-calendar"></i> <strong>Año:</strong> 202X</li>
+                      <li><i class="fa fa-arrows-alt"></i> <strong>Superficie:</strong> 800 m2</li>
+                      <li><i class="fa fa-map"></i> <a href="https://g.co/kgs/JLb6E82" target="_blank">Ver en Mapa</a></li>
+                    </ul>
+                    <h3>Descripción del proyecto</h3>
+                    <li>Sector de internación: 26 habitaciones con una capacidad total para 52 camas de ultima generación.</li>
+                     <li>Cocina para abastecimiento integral del policlínico: 250 m2 .</li>
+                     <li>Estación de Enfermería.</li>
+                     <li>Área administrativa.</li>
+                     <li>Office de alimentación.</li>
+                     <li>Esterilización y limpieza.</li>
+                     <li>Habitación de Guardia médica.</li> 
+                  </div>
+                </div>
+                <div class="col-lg-4 ">
+                  <a href="assets/images/hospitalarias/policlinico-santamarina/img.jpg" data-lightbox="proyecto4">
+                    <img src="assets/images/hospitalarias/policlinico-santamarina/img.jpg" class="img-fluid rounded large-img" alt="Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+              <div class="row mt-4 ">
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto4">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 1 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto4">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 2 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto4">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 3 del Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section id="proyecto5" class="pb_section bg-light">
+            <div class="container">
+              <div class="row justify-content-md-center text-center mb-5">
+                <div class="col-lg-7">
+                  <h2 class="mt-0 heading-border-top font-weight-normal">Bioterio del INVAP S.E.</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="project-details">
+                    <h3>Datos del proyecto</h3>
+                    <ul class="list-unstyled">
+                      <li><i class="fa fa-building"></i> <strong>Cliente:</strong> INVAP</li>
+                      <li><i class="fa fa-map-marker"></i> <strong>Localización:</strong> Av. San Martin 5481– Ciudad Autónoma de Buenos Aires</li>
+                      <li><i class="fa fa-calendar"></i> <strong>Año:</strong> 202X</li>
+                      <li><i class="fa fa-arrows-alt"></i> <strong>Superficie:</strong> 400 m2</li>
+                      <li><i class="fa fa-map"></i> <a href="https://g.co/kgs/JLb6E82" target="_blank">Ver en Mapa</a></li>
+                    </ul>
+                    <h3>Descripción del proyecto</h3>
+                 <p>Bioterio INVAP</p>
+                 <li>Construcción de Edificio de una planta para destinado a laboratorio de investigación celular.</li>
+                 <li>Depósitos (patológico – material limpio/sucio) -  Salas de aislamiento, cuarentena y laboratorio.</li>
+                 <li>Sala de stock.</li>
+                 <li>Sanitarios para el personal.</li>
+                  </div>
+                </div>
+                <div class="col-lg-4 ">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto5">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded large-img" alt="Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+              <div class="row mt-4 ">
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto5">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 1 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto5">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 2 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto5">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 3 del Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="proyecto6" class="pb_section bg-light">
+            <div class="container">
+              <div class="row justify-content-md-center text-center mb-5">
+                <div class="col-lg-7">
+                  <h2 class="mt-0 heading-border-top font-weight-normal">Bioterio Veterinaria UBA</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="project-details">
+                    <h3>Datos del proyecto</h3>
+                    <ul class="list-unstyled">
+                      <li><i class="fa fa-building"></i> <strong>Cliente:</strong> UBA</li>
+                      <li><i class="fa fa-map-marker"></i> <strong>Localización:</strong> Monte Grande – Provincia de Buenos Aires</li>
+                      <li><i class="fa fa-calendar"></i> <strong>Año:</strong> 202X</li>
+                      <li><i class="fa fa-arrows-alt"></i> <strong>Superficie:</strong> 800 m2</li>
+                      <li><i class="fa fa-map"></i> <a href="https://g.co/kgs/JLb6E82" target="_blank">Ver en Mapa</a></li>
+                    </ul>
+                    <h3>Descripción del proyecto</h3>
+                   <p>Bioterio Veterinaria UBA</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 ">
+                  <a href="assets/images/hospitalarias/veterinaria-uba/10.jpg" data-lightbox="proyecto6">
+                    <img src="assets/images/hospitalarias/veterinaria-uba/10.jpg" class="img-fluid rounded large-img" alt="Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+              <div class="row mt-4 ">
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/veterinaria-uba/7.jpg" data-lightbox="proyecto6">
+                    <img src="assets/images/hospitalarias/veterinaria-uba/7.jpg" class="img-fluid rounded project-img" alt="Imagen 1 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/veterinaria-uba/6.jpg" data-lightbox="proyecto6">
+                    <img src="assets/images/hospitalarias/veterinaria-uba/6.jpg" class="img-fluid rounded project-img" alt="Imagen 2 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/hospitalarias/veterinaria-uba/6.jpg" data-lightbox="proyecto6">
+                    <img src="assets/images/hospitalarias/veterinaria-uba/6.jpg" class="img-fluid rounded project-img" alt="Imagen 3 del Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="proyecto7" class="pb_section bg-light">
+            <div class="container">
+              <div class="row justify-content-md-center text-center mb-5">
+                <div class="col-lg-7">
+                  <h2 class="mt-0 heading-border-top font-weight-normal">Unidad Coronaria Hospital Cosme Argerich</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="project-details">
+                    <h3>Datos del proyecto</h3>
+                    <ul class="list-unstyled">
+                      <li><i class="fa fa-building"></i> <strong>Cliente:</strong> Hospital Cosme Argerich</li>
+                      <li><i class="fa fa-map-marker"></i> <strong>Localización:</strong> La Boca – Provincia de Buenos Aires</li>
+                      <li><i class="fa fa-calendar"></i> <strong>Año:</strong> 202X</li>
+                      <li><i class="fa fa-arrows-alt"></i> <strong>Superficie:</strong> 800 m2</li>
+                      <li><i class="fa fa-map"></i> <a href="https://g.co/kgs/JLb6E82" target="_blank">Ver en Mapa</a></li>
+                    </ul>
+                    <h3>Descripción del proyecto</h3>
+                   <p>Unidad Coronaria Hospital Cosme Argerich</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 ">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto7">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded large-img" alt="Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+              <div class="row mt-4 ">
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto7">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 1 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto7">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 2 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto7">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 3 del Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          
+          <section id="proyecto8" class="pb_section bg-light">
+            <div class="container">
+              <div class="row justify-content-md-center text-center mb-5">
+                <div class="col-lg-7">
+                  <h2 class="mt-0 heading-border-top font-weight-normal">Refuncionalizacion Centro Quirurgico Sanatorio Dr. Julio Mendez - ObSBA</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="project-details">
+                    <h3>Datos del proyecto</h3>
+                    <ul class="list-unstyled">
+                      <li><i class="fa fa-building"></i> <strong>Cliente:</strong> Centro Quirurgico Sanatorio Dr. Julio Mendez</li>
+                      <li><i class="fa fa-map-marker"></i> <strong>Localización:</strong> Ciudad Autonoma de Buenos Aires</li>
+                      <li><i class="fa fa-calendar"></i> <strong>Año:</strong> 202X</li>
+                      <li><i class="fa fa-arrows-alt"></i> <strong>Superficie:</strong> 800 m2</li>
+                      <li><i class="fa fa-map"></i> <a href="https://g.co/kgs/JLb6E82" target="_blank">Ver en Mapa</a></li>
+                    </ul>
+                    <h3>Descripción del proyecto</h3>
+                   <p>Refuncionalizacion Centro Quirurgico Sanatorio Dr. Julio Mendez - ObSBA</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 ">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto8">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded large-img" alt="Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+              <div class="row mt-4 ">
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto8">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 1 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto8">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 2 del Hospital Ezeiza">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="assets/images/1900x1200_img_3.jpg" data-lightbox="proyecto8">
+                    <img src="assets/images/1900x1200_img_3.jpg" class="img-fluid rounded project-img" alt="Imagen 3 del Hospital Ezeiza">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
       </section>
       
-    
-     
+      
+      <footer class="footer bg-dark text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="footer-logo">
+                <img src="assets/images/logo/hcsa-logo-blanco.png" alt="HCSA Logo" class="img-fluid mb-2">
+                <p class="mb-0">Hogar Construcciones SA</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h5 class="footer-heading">Acceso Rápido</h5>
+              <ul class="list-unstyled footer-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li class="dropdown">
+                  <a href="#obras">Obras</a>
+                  <ul class="list-unstyled pl-3">
+                    <li><a href="viviendas.html">Viviendas</a></li>
+                    <li><a href="hospitalarias.html">Hospitalarias, Laboratorios y Bioterios</a></li>
+                    <li><a href="administrativos.html">Edificios Administrativos</a></li>
+                    <li><a href="educativos.html">Establecimientos Educativos y Deportivos</a></li>
+                  </ul>
+                </li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5 class="footer-heading">Contacto</h5>
+              <p class="mb-1"><i class="fas fa-envelope"></i> <a href="mailto:contacto@hcsa.com.ar" class="text-white">contacto@hcsa.com.ar            </a></p>
+              <p class="mb-1"><i class="fas fa-phone"></i> <a href="tel:+541160938767" class="text-white">+54 11 6093-8767</a></p>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-12 text-center">
+              <p class="mb-0">&copy; 2024 Hogar Construcciones SA. Todos los derechos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
    
 
    
       
-    
+<!-- Back to top -->
+<button id="backToTop" class="back-to-top smoothscroll">
+  <i class="fas fa-chevron-up"></i>
+</button>
 
-    <footer class="pb_footer bg-light" role="contentinfo">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col text-center">
-            <p class="pb_font-14">&copy; 2017 <a href="https://uicookies.com/">Law</a>. All Rights Reserved. Designed by <a href="https://uicookies.com/">uiCookies</a> Demo Images: Unsplash</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+
+   
     
     <!-- loader -->
     <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#FDA04F"/></svg></div>
@@ -141,6 +631,11 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/scrollDown.js"></script>
+    <script src="assets/js/backTop.js"></script>
+
+    <!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 
 	</body>
 </html>
