@@ -41,15 +41,23 @@
 }
 
 .bannerHome {
+  display: flex;
+ justify-content:center;
+ align-items: center;
+  height: 40vh;
   background-image: url(../images/feed/banner.jpeg) !important;
   background-position: center center; /* Centra la imagen */
   background-size: cover; /* Asegura que la imagen cubra toda el área */
   background-attachment: fixed; /* Fija la imagen en su lugar */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-attachment: scroll; /* Desactiva el fondo fijo en móviles */
-
 }
 
+.bannerHome h2, .bannerHome p{
+  margin: auto;
+  text-align: center;
+  color: white;
+  width: 80%;
+}
 
 @keyframes dropdown-animation {
     from {
