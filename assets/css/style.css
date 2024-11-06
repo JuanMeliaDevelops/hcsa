@@ -42,30 +42,48 @@
 
 .bannerHome {
   display: flex;
- justify-content:center;
- align-items: center;
-  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
   background-image: url(../images/feed/banner.jpeg) !important;
-  background-position: center center; /* Centra la imagen */
-  background-size: cover; /* Asegura que la imagen cubra toda el área */
-  background-attachment: fixed; /* Fija la imagen en su lugar */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.bannerHome h2, .bannerHome p{
+.bannerHome p {
   margin: auto;
   text-align: center;
   color: white;
   width: 80%;
+  font-size: 1.2rem;
 }
 
+.bannerHome h2{
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+}
+
+
+
+/* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
   .bannerHome {
-    background-attachment: scroll; /* Desactiva el fondo fijo en móviles */
+    background-attachment: fixed; /* Fondo fijo solo en escritorio */
+  }
+
+  .bannerHome p {
+
+    font-size: 0.9rem;
+  }
+  
+  .bannerHome h2{
+
+    font-size: 1.4rem;
   }
 }
-
-
 
 
 @keyframes dropdown-animation {
