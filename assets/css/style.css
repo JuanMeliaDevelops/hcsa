@@ -59,6 +59,13 @@
   width: 80%;
 }
 
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+  .bannerHome {
+    background-attachment: scroll; /* Desactiva el fondo fijo en móviles */
+  }
+}
+
 @keyframes dropdown-animation {
     from {
         opacity: 0;
