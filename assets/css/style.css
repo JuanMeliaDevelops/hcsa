@@ -305,7 +305,19 @@
   visibility: visible;
 }
 
+/* Para asegurar que la imagen de fondo cubra toda la sección */
+.cover-bg-black {
+  background-size: cover;
+  background-position: center center; /* Centra la imagen en la sección */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
 
+/* Para desactivar el fondo fijo en pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .cover-bg-black {
+      background-attachment: scroll; /* El fondo se mueve con el desplazamiento en móviles */
+  }
+}
 
 .mouse-wrap, .scroll-wrap {
   position: absolute;
