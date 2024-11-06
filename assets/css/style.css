@@ -59,6 +59,13 @@
   width: 80%;
 }
 
+@media (max-width: 768px) {
+  .bannerHome {
+    background-attachment: scroll; /* Desactiva el fondo fijo en móviles */
+  }
+}
+
+
 
 
 @keyframes dropdown-animation {
@@ -315,7 +322,9 @@
   transition: background-color 0.3s, opacity 0.3s;
   opacity: 0;
   visibility: hidden; 
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Ajustes para dispositivos móviles */
