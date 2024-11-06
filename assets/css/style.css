@@ -46,6 +46,8 @@
   background-size: cover; /* Asegura que la imagen cubra toda el área */
   background-attachment: fixed; /* Fija la imagen en su lugar */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: scroll; /* Desactiva el fondo fijo en móviles */
+
 }
 
 
