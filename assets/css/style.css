@@ -346,16 +346,6 @@
   align-items: center;
 }
 
-/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 20px; /* Ajustar la distancia desde la parte inferior */
-    right: 15px; /* Ajustar la distancia desde la derecha */
-    width: 40px; /* Reducir el tamaño del botón */
-    height: 40px; /* Reducir el tamaño del botón */
-    font-size: 18px; /* Reducir el tamaño del icono */
-  }
-}
 
 
 .back-to-top:hover {
