@@ -50,6 +50,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; 
+ 
+
 }
 
 .bannerHome p {
@@ -69,8 +71,20 @@
 
 
 
+
 /* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
+
+  .homeSub{
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .imageNosotros{
+    margin-bottom: 6%;
+  }
+  
   .bannerHome {
     background-attachment: scroll; /* Fondo fijo solo en escritorio */
   }
@@ -346,6 +360,16 @@
   align-items: center;
 }
 
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px; /* Ajustar la distancia desde la parte inferior */
+    right: 15px; /* Ajustar la distancia desde la derecha */
+    width: 40px; /* Reducir el tamaño del botón */
+    height: 40px; /* Reducir el tamaño del botón */
+    font-size: 18px; /* Reducir el tamaño del icono */
+  }
+}
 
 
 .back-to-top:hover {
@@ -1681,11 +1705,13 @@ a {
     box-shadow: -17px 10px 34px -18px rgba(0, 0, 0, 0.5); }
     @media (max-width: 767px) {
       .images .img2 {
+       
         position: relative;
         left: inherit !important;
         top: inherit !important;
         max-width: 100%; } }
   .images.right .img1 {
+    
     position: relative;
     z-index: 2;
     -webkit-box-shadow: -17px 10px 34px -18px rgba(0, 0, 0, 0.5);
