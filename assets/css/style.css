@@ -145,6 +145,16 @@
 
 
 /* obras */
+.large-img, .project-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.large-img:hover, .project-img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
 
 .pb_section {
   padding: 60px 0;
