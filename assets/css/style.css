@@ -231,7 +231,7 @@
 .list-group-item {
   display: block;
   height: 34vh !important;
-  margin: 2% !important;
+  margin-bottom: 2% !important;
   background-color: #f8f9fa;
   border: 1px solid #dee2e6;
   border-radius: 0.375rem;
