@@ -156,3 +156,11 @@ $(document).ready(function($) {
 
 });
 
+
+// ligthbox//
+
+lightbox.option({
+    "alwaysShowNavOnTouchDevices": true,
+    "disableScrolling": true
+});
+
